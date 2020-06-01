@@ -15,7 +15,7 @@ public class TwentyOneGameEvaluator {
             case TEN: return 10;
             case ACE: return 11;
         }
-        throw new NullPointerException();
+        throw new InvalidCardSuiteException();
     }
 
     public int evaluateHand(List<Suite> cards) {
