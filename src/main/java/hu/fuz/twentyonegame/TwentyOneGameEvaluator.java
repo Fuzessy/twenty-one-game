@@ -13,9 +13,19 @@ public class TwentyOneGameEvaluator {
             case EIGHT: return 8;
             case NINE: return 9;
             case TEN: return 10;
-            case ELEVEN: return 11;
-            case ACE: return 12;
+            case ACE: return 11;
         }
         throw new NullPointerException();
+    }
+
+    public int evaluateHand(List<Suite> cards) {
+        if(isExactlyTwoAce(cards)){
+            return 21;
+        }
+        return cards.stream().map(this::getCardValue).reduce(Integer::sum).get();
+    }
+
+    private boolean isExactlyTwoAce(List<Suite> cards) {
+        return cards.size() == 2 && cards.get(0) == Suite.ACE && cards.get(1) == Suite.ACE;
     }
 }
