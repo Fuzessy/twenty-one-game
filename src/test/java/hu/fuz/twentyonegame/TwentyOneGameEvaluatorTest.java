@@ -48,8 +48,8 @@ public class TwentyOneGameEvaluatorTest {
         assertEquals(21, evaluateHand(twentyOneGameEvaluator, Suite.OBER));
     }
 
-    private int evaluateHand(TwentyOneGameEvaluator twentyOneGameEvaluator, Suite ober) {
-        return twentyOneGameEvaluator.evaluateHand(Arrays.asList(Suite.NINE, Suite.NINE, ober));
+    private int evaluateHand(TwentyOneGameEvaluator twentyOneGameEvaluator, Suite suite) {
+        return twentyOneGameEvaluator.evaluateHand(Arrays.asList(Suite.NINE, Suite.NINE, suite));
     }
 
     @Test

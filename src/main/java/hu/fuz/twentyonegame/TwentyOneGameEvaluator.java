@@ -19,9 +19,10 @@ public class TwentyOneGameEvaluator {
     }
 
     public int evaluateHand(List<Suite> cards) {
-        if(isExactlyTwoAce(cards)){
-            return 21;
-        }
+        return isExactlyTwoAce(cards) ? 21 : sumCardsByRank(cards);
+    }
+
+    private Integer sumCardsByRank(List<Suite> cards) {
         return cards.stream().map(this::getCardValue).reduce(Integer::sum).get();
     }
 
