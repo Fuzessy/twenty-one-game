@@ -2,7 +2,7 @@ package hu.fuz.twentyonegame;
 
 import java.util.List;
 
-public class TwentyOneGameEvaluator {
+public class HandEvaluator {
 
     protected int getCardValue(Suite cardSuite) {
         switch (cardSuite){
