@@ -1,5 +1,7 @@
 package hu.fuz.twentyonegame;
 
+import hu.fuz.twentyonegame.model.Suite;
+
 import java.util.List;
 
 public class HandEvaluator {

@@ -1,5 +1,6 @@
 package hu.fuz.twentyonegame;
 
+import hu.fuz.twentyonegame.model.Suite;
 import org.junit.Before;
 import org.junit.Test;
 
