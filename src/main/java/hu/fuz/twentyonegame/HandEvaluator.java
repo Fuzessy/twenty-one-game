@@ -1,5 +1,6 @@
 package hu.fuz.twentyonegame;
 
+import hu.fuz.twentyonegame.exception.InvalidCardSuiteException;
 import hu.fuz.twentyonegame.model.Suite;
 
 import java.util.List;
